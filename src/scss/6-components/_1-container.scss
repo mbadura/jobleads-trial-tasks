@@ -1,0 +1,28 @@
+.c-container {
+    $self: &;
+    $prefix: container;
+
+    height: 100%;
+    max-width: 1180px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+
+    padding-top: 100px;
+
+    .text-input {
+        margin-right: 10px;
+    } 
+
+    .addEvent-container {
+        margin-top: 50px;
+    }
+    
+    .submit-button {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+
