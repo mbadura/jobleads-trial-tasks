@@ -1,0 +1,13 @@
+.c-header {
+    $self: &;
+    $prefix: 'header';
+
+    width: 100%;
+    padding: 15px;
+
+    @include md {
+        width: 292px;
+        background: $color-mid-gray;
+    }
+
+}

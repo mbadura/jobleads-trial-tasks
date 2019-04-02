@@ -1,0 +1,80 @@
+/* ==========================================================================
+   #FONTS
+   ========================================================================== */
+
+   $font-family-regular: 'firasansregular';
+   $font-family-light: 'firasanslight';
+   $font-family-medium: 'firasansmedium';
+   $font-family-bold: 'firasansbold';
+   
+   
+   @font-face {
+       font-family: $font-family-regular;
+       src: url('../fonts/FiraSans-Regular.ttf') format('truetype');
+       font-weight: normal;
+       font-style: normal;
+   }
+   
+   @font-face {
+       font-family: $font-family-light;
+       src: url('../fonts/FiraSans-Light.ttf') format('truetype');
+       font-weight: normal;
+       font-style: normal;
+   
+   }
+   
+   @font-face {
+       font-family: $font-family-medium;
+       src: url('../fonts/FiraSans-Medium.ttf') format('truetype');
+       font-weight: normal;
+       font-style: normal;
+   }
+   
+   @font-face {
+       font-family: $font-family-bold;
+       src: url('../fonts/FiraSans-Bold.ttf') format('truetype');
+       font-weight: normal;
+       font-style: normal;
+   }
+   
+   h1,h2,h3,h4 {
+       font-family: $font-family-medium;
+   }
+   
+   a,p,span,ul,li {
+       font-family: $font-family-regular;
+   }
+
+   /* ==========================================================================
+   #ICON FONTS
+   ========================================================================== */
+
+
+   @font-face {
+    font-family: 'icons';
+    src: url('../fonts/icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+   
+   [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+   
+  .icon-arrow:before { content: '\e800'; } /* '' */
+  .icon-arrowcircle:before { content: '\e801'; } /* '' */
+  .icon-cross:before { content: '\e802'; } /* '' */

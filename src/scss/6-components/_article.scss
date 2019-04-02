@@ -1,0 +1,21 @@
+.c-article {
+    $self: &;
+    $prefix: 'article';
+
+    width: 100%;
+
+    @include lg {
+        margin-top: 24px;
+        width: 424px;
+    }
+
+    &__stage {
+        width: 100%;
+
+        @include md {
+            display: none;
+        }
+
+    }
+
+}

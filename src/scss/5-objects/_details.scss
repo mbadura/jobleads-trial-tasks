@@ -1,0 +1,9 @@
+.o-details {
+    $self: &;
+    $prefix: 'details';
+
+    background: $color-mid-light;
+    padding: 35px 15px 0 15px;
+    max-width: 100%;
+
+}

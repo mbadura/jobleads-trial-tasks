@@ -1,0 +1,20 @@
+.c-footer {
+    $self: &;
+    $prefix: 'footer';
+
+    width: 100%;
+    height: $footer-height;
+    background: $color-gray;
+
+    display: flex;
+    
+    &__text {
+        color: $color-light-gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+}

@@ -1,0 +1,41 @@
+.o-headline {
+    $self: &;
+    $prefix: 'headline';
+
+    &__boxed {
+        display: block;
+        padding: 15px;
+    }
+
+    &__text {
+        &--regular {
+            font-family: $font-family-regular;
+        }
+        &--small {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &--medium {
+            line-height: 34px;
+            font-size: 24px;
+        }
+        &--large {
+            font-size: 32px;
+        }
+        &--white {
+            color: $color-light;
+        }
+        &--gray {
+            color: $color-gray-2;
+        }
+        &--underline {
+            text-decoration: underline;
+        }
+
+    }
+
+    &--black-background {
+        background: $color-gray;
+    }
+
+}

@@ -1,0 +1,130 @@
+.c-headhunter {
+    $self: &;
+    $prefix: 'headhunter';
+
+    width: 242px;
+    height: 407px;
+    padding: 0 10px;
+    background: rgba(255,255,255,1);
+    color: $color-gray-2;
+    overflow: hidden;
+
+    position: absolute;
+    top: 468px;
+    left: 487px;
+
+    // display: flex;
+
+    h1 {
+        font-size: 17px;
+        margin-top: 16px;
+    }
+
+    h2 {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    &-buttons {
+        right: -100px;
+        position: absolute;
+        top: 50%;
+        transition: right .2s linear;
+        transform: translate(-50%,-50%);
+    }
+
+    &__buttons-visible {
+        #{ $self }-buttons {
+            right: -3px;
+        }
+    }   
+
+    &-button {
+        $button-height: 50px;
+
+        color: $color-white;
+        display: block;
+        width: 25px;
+        height: $button-height;
+        background: $color-gray;
+        position: relative;
+
+        &:after {
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-width: 5px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        &__up {
+            border-radius: 5px 5px 0 0;
+            margin-top: -20px;
+
+            &:after {
+                border-bottom-color: #fff;
+            }
+
+        }
+
+        &__down {
+            border-radius: 0 0 5px 5px;
+            margin-top: 10px;
+            &:after {
+                border-top-color: #fff;
+            }
+
+        }
+
+    }
+
+    &-list {
+        margin-top: 20px;
+        height: 260px;
+        overflow-y: hidden;
+    }
+
+    &-count {
+        font-size: 12px;
+        display: block;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    &-person {
+        display: flex;
+        margin-bottom: 20px;
+        color: $color-gray-2;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-details {
+            margin-left: 9px;
+            margin-top: 7px;
+        }
+
+        &-name {
+            font-size: 13px;
+            margin-bottom: 1px;
+        }
+
+        &-company {
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+
+        &-date {
+            font-size: 11px;
+        }
+    }
+
+
+}

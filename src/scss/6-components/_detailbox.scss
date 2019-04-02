@@ -1,0 +1,67 @@
+.c-detailbox {
+    $self: &;
+    $prefix: 'detailbox';
+    position: relative;
+    top: 0;
+    background: $color-white;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    
+
+    &--is-visible {
+        max-height: 1000px;
+        padding: 10px;
+        transition: max-height ease-in-out 1s;
+    }
+    
+
+    @include lg {
+        position: fixed;
+        width: 460px;
+        background: rgba(255,255,255,.5);
+        right: 0;
+        padding: 35px;
+        top: -1000px; 
+        transition: all ease-in-out 1s;
+
+        &--is-visible {
+            top: 0;
+        }
+
+    }
+    
+
+    .o-headline__text {
+        font-family: $font-family-light;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $color-gray-2;
+        margin-bottom: 30px;
+    }
+
+    .o-copy {
+        font-family: $font-family-light;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        &:after {
+            font-family: 'icons';
+            color: $color-gray-2;
+            content: '\e802';
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+}
