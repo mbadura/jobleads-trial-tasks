@@ -1,0 +1,15 @@
+.c-container {
+    $self: &;
+    $prefix: 'container';
+
+    width: 100%;
+    padding: 0;
+
+    &-inner {
+        width: 985px;
+        height: 100vh;
+        margin: 0 auto;
+        position: relative;
+    }
+
+}
